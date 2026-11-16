@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.exe
+*.zip
+*.spec
+/build/
+/dist/
+/.venv/
+/venv/
+
+# Local verification reports and earlier development artifacts.
+/*.json
+/design/
+/work/
+/reverse*/
+/RobRunTranslate*/
+/design-qa.md
+/E0124_原因与修正.md
+/README_新增语言实验.md
+/test_manager.py
+*.log
+/用户词库.json
+
+# Full game-derived resources and development corpora stay local, never release.
+/data/*.bundle
+/data/addon/*.bundle
+/data/addon/*.bin
+/data/icon.ico
+/data/strings_en.json
+/data/zh_cn.json
+/data/patch_manifest.json

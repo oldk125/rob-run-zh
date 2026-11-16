@@ -1,0 +1,126 @@
+{
+  "build": "26615022",
+  "original_sha256": {
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-string-tables-english(unitedstates)(en-us)_assets_all.bundle": "090153a66d6afda6c2fc64c7fae1cfe2135b0c44d16372b58ab1699a220dd49f",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inbuild_assets_all.bundle": "d4bff10e5f31e8e10b3bbf979aa6ee872bed5daff59765b1837fe1d733747531",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.12.10.33.03.bin": "b3d6093756e39b35ecedd40ef151e0270be87b0bb883a3a2ff5d6d51deadb9f0",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.12.10.33.03.hash": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538",
+    "ROB RUN_Data\\StreamingAssets\\aa\\settings.json": "e6cdb33325232085922d9671998436d6b04268da619b64981b95ef7b4f5a77a0",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\scriptableobjects_assets_all.bundle": "db5d0b13ea2c31666baffaae5a46cd75fd0998b527ed638335ba2872dd26a93c",
+    "ROB RUN_Data\\globalgamemanagers.assets": "7c58f58f750c0d42e50d0f102f78bd48a956bed672ff45e810470c968c867eba",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-locales_assets_all.bundle": "acc889db3b4981bfd0bb4c1cad0682dd238e1291699c51c5ce88b4522ce5a701"
+  },
+  "files": [
+    {
+      "source": "data/addon/zh-cn-locales.bsdiff",
+      "target": "codex_zh_addon/zh-cn-locales.bundle",
+      "sha256": "8f9b56d524e79b20d9aeb4ee0b5228bb9dd72e538e21a0ad48f29ca2ddaa0679",
+      "patch": {
+        "format": "bsdiff4",
+        "sha256": "5eb83f4c060dbe6fe9522c39248dd98be5f49a17faa0a1d7ded44f63430a5fca",
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-locales_assets_all.bundle"
+      }
+    },
+    {
+      "source": "data/addon/zh-cn-tables.bsdiff",
+      "target": "codex_zh_addon/zh-cn-tables.bundle",
+      "sha256": "32452c890fa96cfe7b7f34311b7aec8877613537e2542c419ed58b5eb6f94328",
+      "patch": {
+        "format": "bsdiff4",
+        "sha256": "60fa7716f01f258e7e7e23ee582e118cdb75fb2941b6fa1702745635653982de",
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-string-tables-english(unitedstates)(en-us)_assets_all.bundle"
+      }
+    },
+    {
+      "source": "data/addon/font.bsdiff",
+      "target": "codex_zh_addon/font-extension.bundle",
+      "sha256": "789c8df3dcc0e0c7b455ec5de43b8e75a990d8191d606af3c6978fbb681a9212",
+      "patch": {
+        "format": "bsdiff4",
+        "sha256": "62a7e348ff65ea228af5ed4bdac3354a212ea019b2023ed1dc2e752b4e0c100b",
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inbuild_assets_all.bundle"
+      }
+    },
+    {
+      "source": "data/addon/catalog.bsdiff",
+      "target": "com.unity.addressables/catalog_2026.11.12.10.33.03.bin",
+      "sha256": "198e42804c23b97444a3617572a5f95c84127a1dc41785b48be42c915560ea62",
+      "patch": {
+        "format": "bsdiff4",
+        "sha256": "019c45acee4be87bbd9b06c8c4877380002c8f883ab7f9b9a1d422a24ca786f9",
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.12.10.33.03.bin"
+      }
+    },
+    {
+      "source": "data/addon/catalog.hash",
+      "target": "com.unity.addressables/catalog_2026.11.12.10.33.03.hash",
+      "sha256": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538"
+    },
+    {
+      "source": "data/addon/locale.bsdiff",
+      "target": "codex_zh_addon/locale-map.bundle",
+      "sha256": "4e97594a0f4c86e48b8bbc58648c6e070fdf14e22039303a51e1015e30551bc7",
+      "patch": {
+        "format": "bsdiff4",
+        "sha256": "44745e617c8cd27e525e12605be36a8742c93e7737ae51fc2a8fa47cec6dab53",
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\scriptableobjects_assets_all.bundle"
+      }
+    }
+  ],
+  "experimental": true,
+  "eac_compatibility": "unverified; local override is not official mod support",
+  "font_registration": "new cached catalog redirects existing font bundle location to independent font-extension.bundle",
+  "legacy_files": [
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "8f9b56d524e79b20d9aeb4ee0b5228bb9dd72e538e21a0ad48f29ca2ddaa0679",
+      "codex_zh_addon\\zh-cn-tables.bundle": "7dc061bf375b30ef63a81739a5253566fab54fa2fc22827f93ac73117a838415",
+      "codex_zh_addon\\font-extension.bundle": "f3d66909ce6659bf507d9fd7c3982e3f862dfad7609836ad3e9207452451fd3b",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.bin": "d960f37441451b4765618e1521e47e7b39e9c8050f3cea5aac79da4c6bf26b6f",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.hash": "f9659624b30eb6b2404f73f874468a99ba37ffb7365a5c9d9390424a27fe896b"
+    },
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "8f9b56d524e79b20d9aeb4ee0b5228bb9dd72e538e21a0ad48f29ca2ddaa0679",
+      "codex_zh_addon\\zh-cn-tables.bundle": "7dc061bf375b30ef63a81739a5253566fab54fa2fc22827f93ac73117a838415",
+      "codex_zh_addon\\font-extension.bundle": "f3d66909ce6659bf507d9fd7c3982e3f862dfad7609836ad3e9207452451fd3b",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.bin": "d960f37441451b4765618e1521e47e7b39e9c8050f3cea5aac79da4c6bf26b6f",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.hash": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538"
+    },
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "8f9b56d524e79b20d9aeb4ee0b5228bb9dd72e538e21a0ad48f29ca2ddaa0679",
+      "codex_zh_addon\\zh-cn-tables.bundle": "32452c890fa96cfe7b7f34311b7aec8877613537e2542c419ed58b5eb6f94328",
+      "codex_zh_addon\\font-extension.bundle": "f3d66909ce6659bf507d9fd7c3982e3f862dfad7609836ad3e9207452451fd3b",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.bin": "198e42804c23b97444a3617572a5f95c84127a1dc41785b48be42c915560ea62",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.hash": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538",
+      "codex_zh_addon\\locale-map.bundle": "4e97594a0f4c86e48b8bbc58648c6e070fdf14e22039303a51e1015e30551bc7"
+    },
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "8f9b56d524e79b20d9aeb4ee0b5228bb9dd72e538e21a0ad48f29ca2ddaa0679",
+      "codex_zh_addon\\zh-cn-tables.bundle": "32452c890fa96cfe7b7f34311b7aec8877613537e2542c419ed58b5eb6f94328",
+      "codex_zh_addon\\font-extension.bundle": "0b6633ddabfb482e329858d517a7bedc2df12a14f13fdd13ee133e63717bd54c",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.bin": "198e42804c23b97444a3617572a5f95c84127a1dc41785b48be42c915560ea62",
+      "com.unity.addressables\\catalog_2026.11.12.10.33.03.hash": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538",
+      "codex_zh_addon\\locale-map.bundle": "4e97594a0f4c86e48b8bbc58648c6e070fdf14e22039303a51e1015e30551bc7"
+    }
+  ],
+  "revision": "0.2.6-delta-packaging",
+  "catalog_base_override": {
+    "base_catalog": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.12.10.33.03.bin",
+    "base_catalog_sha256": "b3d6093756e39b35ecedd40ef151e0270be87b0bb883a3a2ff5d6d51deadb9f0",
+    "base_marker": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.12.10.33.03.hash",
+    "base_marker_sha256": "2c05fcd7fd342a6db838254a68b8e74cff6b88d68b9d03e46e1c7f235c53d538",
+    "inherited_base_version_fingerprint": "1bacaa39d03835fd06860bfb8dfdd9e5",
+    "candidate_is_official_content": false,
+    "candidate_integrity": "independent SHA-256 in files; inherited cache marker is not candidate checksum",
+    "real_base_update_supported": false
+  },
+  "locale_identifier_mapping": "copied scriptableobjects bundle preserves direct references and adds zh-CN",
+  "font_metrics": {
+    "appended_glyphs": 1950,
+    "raster_point_size": 114,
+    "glyph_scale": 1,
+    "metrics_to_atlas_scale": 1,
+    "atlas_size": 8192,
+    "original_face_glyphs_and_atlas_region_preserved": true,
+    "runtime_visual_check": "pending"
+  }
+}

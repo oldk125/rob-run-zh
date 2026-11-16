@@ -1,0 +1,2 @@
+# Tiny binary patch runtime; Tkinter is included with Windows Python.
+bsdiff4==1.4.3
