@@ -29,3 +29,4 @@ __pycache__/
 /data/strings_en.json
 /data/zh_cn.json
 /data/patch_manifest.json
+/native/build/

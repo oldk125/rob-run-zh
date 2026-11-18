@@ -1,52 +1,57 @@
 # ROB RUN 中文适配工具
 
-Windows 桌面汉化管理器：自动定位游戏、安装简体中文、备份与还原、查看操作记录和导出本地诊断。
+0.3.0 全面改用 C# 和 Windows Forms：定位、差分重建、安装、备份、还原及诊断均由新程序实现。运行包不含 Python、PyInstaller、第三方补丁 DLL 或另附的运行库，使用 Windows 自带的 .NET Framework。
 
-当前适配 Steam App `4262460`、游戏 Build `26615022`。工具在用户数据目录管理中文资源，不修改游戏安装目录原文件。
+当前适配 Steam App `4262460`、游戏 Build `26726105`。本次更新翻译 6 条新增、8 条变化的英文，共 4829 条文本；保留已调整的中文字体采样方式。离线校验通过，当前更新的游戏内显示和兼容性仍需实际验证。
 
 ## 使用
 
-1. 退出游戏，运行 `ROB_RUN_CN_0.2.6.exe`。
-2. 点击“自动定位”或“选择目录”，确认 ROB RUN 安装位置。
-3. 安装语言包，从 Steam 正常启动游戏，在语言设置中选择“简体中文”。
+1. 在 Windows 10/11 上完整解压原生版 ZIP，保留 `data` 目录和随附文本。
+2. 退出游戏，双击 `ROB_RUN_CN.exe` 或 `启动汉化工具.bat`，无需安装本工具或 Python。
+3. 自动定位或选择游戏目录，点击安装；从 Steam 正常启动游戏，在语言设置中选择“简体中文”。
 4. 恢复原版时，退出游戏后点击“移除语言包”。
 
-从 0.2.5 升级无需重装语言包：本版仅调整分发方式和声明，重建后的语言资源逐字节相同。更早版本先移除旧语言包，再安装新版。游戏更新前应先移除语言包；遇到版本或文件校验不匹配时，工具会停止操作并保留现有文件。
+0.2.x 用户请先用本版移除已识别的旧语言包，再安装当前资源。本版精确识别旧记录及其备份，移除旧记录时只处理旧记录拥有的文件，不会删除新版官方缓存。未知文件、未知记录、版本不匹配和路径链接均会阻止覆盖。
 
-0.2.6 改为发布差分补丁，安装时只读本机对应版本游戏资源，在临时目录重建并校验，再进入原有备份和安装流程。状态检查和移除不执行重建。完整游戏 bundle、目录数据和原文语料库不包含在本版源码包或 EXE 中。0.2.5 的字体生成方式保持不变，其最终视觉效果仍需在游戏中复核。
+安装在临时目录从本机原版资源重建并校验全部文件，再完整备份已有官方缓存并切换；不修改游戏安装目录原文件。支持操作锁、故障回滚及中断恢复。游戏更新前请移除语言包并保留备份。移除不要求旧版原始资源仍然存在。
 
-这是非官方工具，未因发布而取得游戏汉化授权。差分、免费和免责声明均不能替代权利人授权；译文及补丁的传播仍可能涉及相关权利。使用和对外分发前请确认法律、授权及游戏协议允许的范围。完整说明见 [DISCLAIMER.md](DISCLAIMER.md)，软件底部“免责声明”可查看正文与第三方许可。
+本工具未签名。改用 C# 不代表杀毒产品或 SmartScreen 必然放行，程序不修改安全设置、不添加排除项、不关闭扫描。
 
-## 从源码运行与编译
+## 编译原生版
 
-使用 Windows 版 Python 3.12，安装小型差分依赖；界面使用随 Python 提供的 Tkinter。
+Windows 自带的 .NET Framework C# 编译器即可，无需 Python、NuGet、Visual Studio 或 .NET SDK：
 
-```powershell
-python -m pip install -r requirements.txt
-python ui_v2.py
+```bat
+native\build_native.bat
 ```
 
-编译单文件 EXE：
+产物在 `native\build\`。也可传入输出目录：
 
-```powershell
-python -m pip install -r requirements-build.txt
-python build_exe.py
+```bat
+native\build_native.bat C:\build\ROB_RUN_CN
 ```
 
-构建脚本生成 `ROB_RUN_CN.exe`，仅打包清单中的差分、UI 图标和许可声明。可用 `--name`、`--output`、`--work` 指定文件名、输出和中间目录。
+`native/Program.cs` 为原生界面，`native/Manager.cs` 为事务后端，`native/DeltaPatch.cs` 使用系统 GZipStream 解读差分。根目录旧 Python 源码仅保留为开发历史参考，不是 0.3.0 的运行入口；旧版构建脚本不适用于当前原生资源格式。
 
-`ui_v2.py` 是界面入口，`addon.py` 负责用户缓存中的安装与移除。`manager.py` 提供共用函数；新版入口不使用其中保留的旧界面。字体资源开发另需 `requirements-dev.txt` 中的 UnityPy 和 Pillow，运行管理器不需要安装它们。原文及完整开发资源不随源码分发。
+差分创建及游戏资源开发使用的 Python 工具属于开发流程，不会进入运行包。完整游戏资源、英文语料库与重建后的完整文件均不随发布包分发。
 
 ## 检查
 
-安装与还原测试使用临时目录；指定的游戏目录仅作为只读原版资源来源：
+原生事务回归只操作指定工作目录中生成的假游戏和假缓存：
 
-```powershell
-python test_addon.py --game "D:\steam\steamapps\common\Rob Run"
+```bat
+%WINDIR%\Microsoft.NET\Framework64\v4.0.30319\csc.exe /nologo /out:TestNative.exe /r:System.Web.Extensions.dll /r:System.Core.dll native\Manager.cs native\DeltaPatch.cs native\TestNative.cs
+TestNative.exe C:\build\checks
 ```
 
-## 第三方组件
+界面自检不安装汉化、不启动游戏、不访问真实用户缓存：
 
-详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) 及随附许可。第三方组件的许可证不授予游戏内容的权利。
+```bat
+native\build\ROB_RUN_CN.exe --self-test-ui native\build C:\build\checks\ui.json
+```
 
-本版发布范围已排除完整资源，但旧 Git 提交、旧 Release 或用户下载的历史包可能仍含旧内容；新版本不能自动清除历史副本。
+## 权利与第三方组件
+
+这是非官方中文适配项目。差分、免费及免责声明均不能替代权利人授权；使用和对外分发前请确认法律、授权及游戏协议允许的范围。见 [DISCLAIMER.md](DISCLAIMER.md) 与 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，也可从界面底部离线查看。
+
+更新发布包不能撤回他人已下载的文件或平台缓存中的历史副本。
