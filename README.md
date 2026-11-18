@@ -1,4 +1,4 @@
-# ROB RUN 中文适配工具
+# ROB RUN 中文汉化适配工具
 
 0.3.0 全面改用 C# 和 Windows Forms：定位、差分重建、安装、备份、还原及诊断均由新程序实现。运行包不含 Python、PyInstaller、第三方补丁 DLL 或另附的运行库，使用 Windows 自带的 .NET Framework。
 
