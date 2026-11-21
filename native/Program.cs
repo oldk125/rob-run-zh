@@ -13,14 +13,14 @@ using System.Windows.Forms;
 [assembly: AssemblyTitle("ROB RUN 中文适配工具")]
 [assembly: AssemblyDescription("ROB RUN 简体中文适配管理器")]
 [assembly: AssemblyProduct("ROB RUN 中文适配工具")]
-[assembly: AssemblyVersion("0.3.0.0")]
-[assembly: AssemblyFileVersion("0.3.0.0")]
+[assembly: AssemblyVersion("0.3.1.0")]
+[assembly: AssemblyFileVersion("0.3.1.0")]
 
 namespace RobRunZh
 {
     internal static class Program
     {
-        internal const string Version = "0.3.0";
+        internal const string Version = "0.3.1";
 
         [STAThread]
         private static int Main(string[] args)
