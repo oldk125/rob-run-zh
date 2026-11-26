@@ -1,15 +1,15 @@
 {
-  "build": "26807668",
-  "revision": "0.3.1-native-build26807668",
+  "build": "26866884",
+  "revision": "0.3.2-native-build26866884",
   "original_sha256": {
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-string-tables-english(unitedstates)(en-us)_assets_all.bundle": "0d3123a263a1429522a7478d683e6c898240ba23a6a8b253597df15b78004b59",
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inbuild_assets_all.bundle": "e1e772ba72e9599f31c73a18f5283bb54292f8ce3c5ef78391690595f2fe59c7",
-    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.20.09.13.52.bin": "dbd92e04274e5b20a9e6e88096cc558053c1aa85671939d028f349766ee4226b",
-    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.20.09.13.52.hash": "98d38f18a423a1b9979929f1f072c302bfd0bbd88d4372c35b34ddd45ac7306d",
-    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\scriptableobjects_assets_all.bundle": "f3623ab838c3a045627895cab0a39ec40e62fc90061e5f55662888fbd43d8721",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.23.11.50.55.bin": "0fd67ff579ae1d5b7fa9439c13b68776539db02b7c06edc0b82ab4081876abc1",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.23.11.50.55.hash": "c162a5ebe77416dc97f9be7d7d0fc4b318b28ef04b17e3b2cf210f46eafd8b3a",
+    "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\scriptableobjects_assets_all.bundle": "3a1e2af4edb33001ec388761bda958169da6fff7cf257394278ceab2a2d6d18f",
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-locales_assets_all.bundle": "acc889db3b4981bfd0bb4c1cad0682dd238e1291699c51c5ce88b4522ce5a701",
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-assets-shared_assets_all.bundle": "b8ea9d49dc0d05efba640e514b68dc522fe2b68c2cf92d007e025868773bfe64",
-    "ROB RUN_Data\\StreamingAssets\\aa\\settings.json": "74031f04b1e3cc5e3d447c760685b8d96acecd3a3828ee55069966d2daafcade",
+    "ROB RUN_Data\\StreamingAssets\\aa\\settings.json": "a11aeacc3e9fa22731b0f5d3ed52850646d95304832530a4e896a00f2e54e6fd",
     "ROB RUN_Data\\globalgamemanagers.assets": "f1e2b617df2ddd44df8bf106dc71abb13ef794b38d40eb148f2467e5a1415e0e"
   },
   "files": [
@@ -45,32 +45,40 @@
     },
     {
       "source": "data/addon/catalog.rrpatch",
-      "target": "com.unity.addressables/catalog_2026.11.20.09.13.52.bin",
-      "sha256": "032cd0d03d3b7c7120dc3684944b54e56144f09d3792f27f3c19e67133343a5a",
+      "target": "com.unity.addressables/catalog_2026.11.23.11.50.55.bin",
+      "sha256": "e78e4a4765b333acf4cb5b5ebda33a19b994a04e1dc062d14c84b3e6ad2232d4",
       "patch": {
         "format": "rrzh-gzip-v1",
-        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.20.09.13.52.bin",
-        "sha256": "290dd7e3844155b9c8549e1d5b5b322c275acb57c4934849423460e4f8b1f371"
+        "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.23.11.50.55.bin",
+        "sha256": "eef8e8fcf3a27754cbaf5f2d8231b3916a9c207ba0e6d9b0a72bdf9bb66a1c95"
       }
     },
     {
       "source": "data/addon/catalog.hash",
-      "target": "com.unity.addressables/catalog_2026.11.20.09.13.52.hash",
-      "sha256": "98d38f18a423a1b9979929f1f072c302bfd0bbd88d4372c35b34ddd45ac7306d"
+      "target": "com.unity.addressables/catalog_2026.11.23.11.50.55.hash",
+      "sha256": "c162a5ebe77416dc97f9be7d7d0fc4b318b28ef04b17e3b2cf210f46eafd8b3a"
     },
     {
       "source": "data/addon/locale.rrpatch",
       "target": "codex_zh_addon/locale-map.bundle",
-      "sha256": "68adcd34589b6a1ef1c9fdc47ace6972c876b843f98244a10fbe67a69eea7411",
+      "sha256": "5356d02136193394db6f1ec7dbeb0c14789f7716443d3e3cfc8d22f5381c9465",
       "patch": {
         "format": "rrzh-gzip-v1",
         "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\scriptableobjects_assets_all.bundle",
-        "sha256": "2a4fe30a7dd3950c5173e1031656481c11bcf36146abb50168c206415893a384"
+        "sha256": "0868b305fc60aebf1b592b46fe627f069c6c74a0c97965de4a53fed5ba014fc4"
       }
     }
   ],
   "legacy_files": [],
   "previous_files": [
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "f47b621dcce4a9e36e41507298b8958a7005ef457c0a4d032847ded2589f21de",
+      "codex_zh_addon\\zh-cn-tables.bundle": "8f46c7df8c5ee27c6ab7089d93beb8ff66943292323483b09970ccd3231e208e",
+      "codex_zh_addon\\font-extension.bundle": "f73a6e558fd08f3ec0cd6e4a263619a43c05b0a62ab7730c5e5be1d824441b76",
+      "com.unity.addressables\\catalog_2026.11.20.09.13.52.bin": "032cd0d03d3b7c7120dc3684944b54e56144f09d3792f27f3c19e67133343a5a",
+      "com.unity.addressables\\catalog_2026.11.20.09.13.52.hash": "98d38f18a423a1b9979929f1f072c302bfd0bbd88d4372c35b34ddd45ac7306d",
+      "codex_zh_addon\\locale-map.bundle": "68adcd34589b6a1ef1c9fdc47ace6972c876b843f98244a10fbe67a69eea7411"
+    },
     {
       "codex_zh_addon\\zh-cn-locales.bundle": "f3f15b64855d374a3d557aa6cfda152966a5fe8ce02838afb9d7a2fe8cfa3627",
       "codex_zh_addon\\zh-cn-tables.bundle": "710b62b917145d0a98b64dd05e144023cd51853a987014c993a8f27d00116d51",
@@ -119,11 +127,11 @@
     }
   ],
   "catalog_base_override": {
-    "base_catalog": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.20.09.13.52.bin",
-    "base_catalog_sha256": "dbd92e04274e5b20a9e6e88096cc558053c1aa85671939d028f349766ee4226b",
-    "base_marker": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.20.09.13.52.hash",
-    "base_marker_sha256": "98d38f18a423a1b9979929f1f072c302bfd0bbd88d4372c35b34ddd45ac7306d",
-    "inherited_base_version_fingerprint": "d5ab515c0dbdd4d47b95c46b7b1537a6",
+    "base_catalog": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.23.11.50.55.bin",
+    "base_catalog_sha256": "0fd67ff579ae1d5b7fa9439c13b68776539db02b7c06edc0b82ab4081876abc1",
+    "base_marker": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\catalog_2026.11.23.11.50.55.hash",
+    "base_marker_sha256": "c162a5ebe77416dc97f9be7d7d0fc4b318b28ef04b17e3b2cf210f46eafd8b3a",
+    "inherited_base_version_fingerprint": "9a5e668d6aa787b627fde16bf995a290",
     "candidate_is_official_content": false,
     "real_base_update_supported": false
   },
