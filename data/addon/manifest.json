@@ -1,6 +1,6 @@
 {
   "build": "26866884",
-  "revision": "0.3.2-native-build26866884",
+  "revision": "0.3.3-vehicle-display-names-build26866884",
   "original_sha256": {
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-string-tables-english(unitedstates)(en-us)_assets_all.bundle": "0d3123a263a1429522a7478d683e6c898240ba23a6a8b253597df15b78004b59",
     "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inbuild_assets_all.bundle": "e1e772ba72e9599f31c73a18f5283bb54292f8ce3c5ef78391690595f2fe59c7",
@@ -16,31 +16,31 @@
     {
       "source": "data/addon/zh-cn-locales.rrpatch",
       "target": "codex_zh_addon/zh-cn-locales.bundle",
-      "sha256": "f47b621dcce4a9e36e41507298b8958a7005ef457c0a4d032847ded2589f21de",
+      "sha256": "720304ad3b3eaec052bb244f66db05becc62b5c8d108604292f9693f0c0b8b2d",
       "patch": {
         "format": "rrzh-gzip-v1",
         "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-locales_assets_all.bundle",
-        "sha256": "e120848c88f135a040e5f77867f951685b00c3df5da5ff491c9344142633e1ca"
+        "sha256": "4bed712218eb945c7e1dc94414c7f89dfcb095bff602e33a46e33a20fab8563f"
       }
     },
     {
       "source": "data/addon/zh-cn-tables.rrpatch",
       "target": "codex_zh_addon/zh-cn-tables.bundle",
-      "sha256": "8f46c7df8c5ee27c6ab7089d93beb8ff66943292323483b09970ccd3231e208e",
+      "sha256": "250fd10cabd9b14ab38c3f3b01e52f71f326a2616d8db0d53df614a84b5ba3e0",
       "patch": {
         "format": "rrzh-gzip-v1",
         "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\localization-string-tables-english(unitedstates)(en-us)_assets_all.bundle",
-        "sha256": "2e2059044f6faa6c0e44eb20448cc8c959739657b5ff4578b1c879886c138bf1"
+        "sha256": "28dbee6ae34645c05aee99f0cd406883cb1075910ab9671087c27063cd1e6551"
       }
     },
     {
       "source": "data/addon/font.rrpatch",
       "target": "codex_zh_addon/font-extension.bundle",
-      "sha256": "f73a6e558fd08f3ec0cd6e4a263619a43c05b0a62ab7730c5e5be1d824441b76",
+      "sha256": "31ee89d98bfc7cf3938be890fb02811a63f08f0290bd0f094075cd74c1bc1604",
       "patch": {
         "format": "rrzh-gzip-v1",
         "base": "ROB RUN_Data\\StreamingAssets\\aa\\StandaloneWindows64\\inbuild_assets_all.bundle",
-        "sha256": "2b2a905b7243a7efae5644ecb3116c487a09f93c8f87e9e70f6b8615e6f9951b"
+        "sha256": "b1b051c4ea7b11b06fe8c63a97ad040f5a00e901b827406bdcff9566966edd5c"
       }
     },
     {
@@ -71,6 +71,14 @@
   ],
   "legacy_files": [],
   "previous_files": [
+    {
+      "codex_zh_addon\\zh-cn-locales.bundle": "f47b621dcce4a9e36e41507298b8958a7005ef457c0a4d032847ded2589f21de",
+      "codex_zh_addon\\zh-cn-tables.bundle": "8f46c7df8c5ee27c6ab7089d93beb8ff66943292323483b09970ccd3231e208e",
+      "codex_zh_addon\\font-extension.bundle": "f73a6e558fd08f3ec0cd6e4a263619a43c05b0a62ab7730c5e5be1d824441b76",
+      "com.unity.addressables\\catalog_2026.11.23.11.50.55.bin": "e78e4a4765b333acf4cb5b5ebda33a19b994a04e1dc062d14c84b3e6ad2232d4",
+      "com.unity.addressables\\catalog_2026.11.23.11.50.55.hash": "c162a5ebe77416dc97f9be7d7d0fc4b318b28ef04b17e3b2cf210f46eafd8b3a",
+      "codex_zh_addon\\locale-map.bundle": "5356d02136193394db6f1ec7dbeb0c14789f7716443d3e3cfc8d22f5381c9465"
+    },
     {
       "codex_zh_addon\\zh-cn-locales.bundle": "f47b621dcce4a9e36e41507298b8958a7005ef457c0a4d032847ded2589f21de",
       "codex_zh_addon\\zh-cn-tables.bundle": "8f46c7df8c5ee27c6ab7089d93beb8ff66943292323483b09970ccd3231e208e",
@@ -137,7 +145,7 @@
   },
   "runtime": ".NET Framework; no bundled Python, PyInstaller or external native dependencies",
   "font_metrics": {
-    "appended_glyphs": 1966,
+    "appended_glyphs": 1971,
     "raster_point_size": 114,
     "glyph_scale": 1,
     "metrics_to_atlas_scale": 1,
